@@ -2,6 +2,7 @@
 
 body {
   background-color: #ededed;
+  padding-top: 70px;
 }
 
 .btn-description {
@@ -12,4 +13,8 @@ body {
 
 .spacer {
   margin: 2em 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
 }
