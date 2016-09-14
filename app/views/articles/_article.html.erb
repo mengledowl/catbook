@@ -1,16 +1,16 @@
 <div class="card card-block">
-  <div class="row">
-    <div class="col-xs-2">
+  <div class="clearfix user-detail">
+    <div>
       <%= image_tag article.authorImg %>
     </div>
 
-    <div class="col-xs-10">
-      <h6 class="card-title"><%= article.author %></h6>
-      <h6 class="card-subtitle text-muted"><%= "#{time_ago_in_words(article.date)} ago" %></h6>
+    <div>
+      <h6 class="card-title"><%= link_to article.author, '#' %></h6>
+      <small class="card-subtitle text-muted"><%= "#{time_ago_in_words(article.date)} ago" %></small>
     </div>
   </div>
 
-  <div class="spacer">
+  <div class="card-body">
     <p class="card-text"><%= article.body %></p>
     <%= image_tag article.imgSrc %>
   </div>

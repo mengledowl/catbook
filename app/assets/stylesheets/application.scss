@@ -11,7 +11,7 @@ body {
   text-align: center;
 }
 
-.spacer {
+.card-body {
   margin: 2em 0;
 }
 
@@ -37,5 +37,22 @@ body {
     &:focus, &:hover {
       color: #fff;
     }
+  }
+}
+
+.user-detail div {
+  width:inherit;
+  padding-left:0;
+  padding-right: 10px;
+  float: left;
+
+  .card-title {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 720px;
   }
 }
