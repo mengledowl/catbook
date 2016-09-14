@@ -49,6 +49,15 @@ body {
   .card-title {
     margin-bottom: 0;
   }
+
+  a {
+    text-decoration: none;
+
+    &:focus, &:hover {
+      color: #0275d8;
+      text-decoration: underline;
+    }
+  }
 }
 
 @media (min-width: 992px) {
