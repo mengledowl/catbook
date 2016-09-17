@@ -9,17 +9,8 @@
       <%= link_to 'Catbook', root_path, class: 'navbar-brand hidden-sm-down' %>
 
       <ul class="nav navbar-nav pull-md-right">
-        <li class="nav-item">
-          <%= link_to 'Home', root_path, class: 'nav-link' %>
-        </li>
-
-        <li class="nav-item">
-          <%= link_to 'Settings', '#', class: 'nav-link' %>
-        </li>
-
-        <li class="nav-item">
-          <%= link_to 'Logout', '#', class: 'nav-link' %>
-        </li>
+        <%= render partial: 'shared/logged_in_nav' if user_signed_in? %>
+        <%= render partial: 'shared/logged_out_nav' unless user_signed_in? %>
       </ul>
     </div>
   </div>
