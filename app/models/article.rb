@@ -1,4 +1,6 @@
-class Article
+class Article < ActiveRecord::Base
+  belongs_to :user
+
   def self.all
     data = {
         "articles":[
