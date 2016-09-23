@@ -1,18 +1,18 @@
 <div class="card card-block">
   <div class="clearfix user-detail">
     <div>
-      <%= image_tag article.authorImg %>
+      <%= image_tag article.user.avatar.url(:thumb), style: 'height: 70px; width: 70px;' %>
     </div>
 
     <div>
-      <h6 class="card-title"><%= link_to article.author, '#' %></h6>
-      <small class="card-subtitle text-muted"><%= "#{time_ago_in_words(article.date)} ago" %></small>
+      <h6 class="card-title"><%= link_to article.user.first_name, '#' %></h6>
+      <small class="card-subtitle text-muted"><%= "#{time_ago_in_words(article.created_at)} ago" %></small>
     </div>
   </div>
 
   <div class="card-body">
     <p class="card-text"><%= article.body %></p>
-    <%= image_tag article.imgSrc %>
+    <%= image_tag article.image_source %>
   </div>
 
   <div class="row">
