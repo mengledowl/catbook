@@ -1,6 +1,8 @@
 class Article < ActiveRecord::Base
   belongs_to :user
 
+  validates_presence_of :body
+
   # temporary
   def likes
     10
