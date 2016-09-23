@@ -7,5 +7,3 @@ class CreateArticles < ActiveRecord::Migration
     end
   end
 end
-
-# todo: run rake db:migrate
